@@ -23,7 +23,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/mydata', endpoint);
-
+app.use('/users',computation);
 app.use('/', usersRouter);
 
 // catch 404 and forward to error handler
